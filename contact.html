@@ -1,0 +1,92 @@
+<!-- Start of header-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <title>Graham Hagenah</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <figure class="image is-64x64">
+                <img class="is-rounded" src="images/graham.jpg">
+              </figure></a>
+          </div>
+          <div class="navbar-end">
+              <a class="navbar-item" href="index.html">
+                  <h1>Home</h1></a>
+              <a class="navbar-item" href="projects.html">
+              <h1>Projects</h1></a>
+              <a class="navbar-item current" href="contact.html">
+                  <h1>Contact</h1></a>
+                  </div>
+          </div>
+        </nav>
+  <!-- End of header-->
+  <section class="hero is-small is-white">
+      <div class="container">
+    <div class="hero-body has-text-centered">
+            <h1 class="title is-1 is-spaced">
+               Thanks for taking the time to reach out.
+            </h1>
+            <h2 class="subtitle is-size-4-desktop">You're also welcome to send me a traditional <a id="underline" href="mailto:gwhagenah@gmail.com">email</a>  or call/text me at <a id="underline" href="tel:4136371333">(413) 637-1333</a>.</h2>
+          </div>
+        </div>
+ </section>
+  <section class="is-primary">
+    <div class="hero-body">
+      <div id = "form-box">
+        <form id="form" action="send_email.php" method="POST" enctype="multipart/form-data">
+          <div class="columns">
+              <div class="column is-half">
+                <div class="field">
+                  <label class="control" for="name"></label>
+                  <div class="control">
+                      <input id="name" class="input is-large" placeholder="Name" name="name" type="text" value="" required>
+                      <span id="name_validation" class="error_message"></span>
+                    </div>
+                  </div>
+              </div>
+              <div class="column is-half">
+                  <div class="field">
+                    <label class="control" for="email"></label>
+                    <div class="control">
+                        <input id="email" class="input is-large" placeholder="Email" name="email" type="text" value="" required>
+                        <span id="email_validation" class="error_message"></span>
+                      </div>
+                </div>
+            </div>
+          </div>
+          <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="control" for="message"></label>
+                  <div class="control">
+                      <textarea id="message" class="textarea is-large" placeholder="Message" name="message" rows="4" required></textarea>
+                      <span id="message_validation" class="error_message"></span>
+                   </div>
+                 </div>
+               </div>
+           </div>
+          <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <div class="control">
+                      <a class="button is-large is-primary is-outlined" type="submit">Send Message</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+         </form>
+      </div>
+    </div>
+    </div>
+   </section>
+   </body>
+   </html>
